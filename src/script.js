@@ -68,12 +68,26 @@ function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let fahrenheit = (celsiusTemperature * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
+  //remove the "active" class from celsius when clicking on °F
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+
   temperatureElement.innerHTML = Math.round(fahrenheit);
 }
 
-// global variables -> accessible from any function.
+//celsius function
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  //remove active class from fahrenheit
+  fahrenheitLink.classList.remove("active");
+  celsiusLink.classList.add("active");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
 
-// added null to leave it empty to filled it once the search/displayTemp is called.
+//global variables -> accessible from any function.
+
+//added null to leave it empty to filled it once the search/displayTemp is called.
 let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
@@ -82,5 +96,9 @@ form.addEventListener("submit", submitCity);
 // fahrenheit unit conversion
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+// celsius unit conversion
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 search("Düsseldorf");
