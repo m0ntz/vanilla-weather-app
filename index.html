@@ -17,13 +17,12 @@
   <div class="container">
     <div class="weather-app">
       <div class="overview">
-        <h1>New York</h1>
+        <h1 id="city"></h1>
         <ul>
           <li>
             Friday 05:00
           </li>
-          <li>
-            Clear
+          <li id="description">
           </li>
         </ul>
       </div>
@@ -31,19 +30,16 @@
         <div class="col-6">
           <div class="d-flex weather-temperature">
             <img src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png" alt="rain-icon" class="float-left" />
-            <strong id="temperature">12</strong><span class="units">°C |<a href="#">°F</a></span>
+            <strong id="temperature"></strong><span class="units">°C |<a href="#">°F</a></span>
           </div>
         </div>
         <div class="col-6">
           <ul>
             <li>
-              Precipitaion: 0%
+              Humidity: <span id="humidity"></span>%
             </li>
             <li>
-              Humidity: 73%
-            </li>
-            <li>
-              Wind: 2 km/h
+              Wind: <span id="wind"></span> km/h
             </li>
           </ul>
         </div>
