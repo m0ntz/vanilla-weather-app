@@ -10,6 +10,10 @@ body {
   border-radius: 5px;
 }
 
+#search-form {
+  margin-bottom: 15px;
+}
+
 h1 {
   display: block;
   font-size: 24px;
