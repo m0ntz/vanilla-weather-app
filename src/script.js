@@ -30,7 +30,9 @@ function displayTemperature(response) {
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
 
-  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  celsiusTemperature = response.data.main.temp;
+
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   humidityElement.innerHTML = response.data.main.humidity;
@@ -61,7 +63,24 @@ function submitCity(event) {
   search(cityInputElement.value);
 }
 
-search("Düsseldorf");
+//fahrenheit function
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheit = (celsiusTemperature * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheit);
+}
+
+// global variables -> accessible from any function.
+
+// added null to leave it empty to filled it once the search/displayTemp is called.
+let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", submitCity);
+
+// fahrenheit unit conversion
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+search("Düsseldorf");
