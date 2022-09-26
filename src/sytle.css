@@ -84,13 +84,13 @@ li::first-letter {
 }
 
 .weather-forecast-date {
-  font-size: 16px;
+  font-size: 18px;
   color: #000;
   opacity: 0.8;
 }
 
 .weather-forecast-temp {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .weather-temp-min {
