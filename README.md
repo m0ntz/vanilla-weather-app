@@ -1,6 +1,6 @@
 # Weather App 🌤️📱
 
-👉 See it live [here](melodious-douhua-11b92a.netlify.app) 
+👉 See it live [HERE](https://melodious-douhua-11b92a.netlify.app/)
 
 ![image](https://user-images.githubusercontent.com/109100764/211618569-9a009625-b26e-4f9c-9da6-6759f4911c55.png)
 
