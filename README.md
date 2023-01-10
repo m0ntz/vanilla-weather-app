@@ -2,7 +2,7 @@
 
 👉 See it live [here](melodious-douhua-11b92a.netlify.app) 
 
-![image](https://user-images.githubusercontent.com/109100764/211616652-532ca098-e58b-40e0-8d96-2c75ec8e0b3c.png)
+![image](https://user-images.githubusercontent.com/109100764/211618569-9a009625-b26e-4f9c-9da6-6759f4911c55.png)
 
 
 ## Description
