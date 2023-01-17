@@ -15,7 +15,7 @@ This app is built with HTML, CSS and Vanilla JS. It fetches the data from the AP
 - See temperature in °C or °F
 - Display weather conditions, humidity and wind.
 
-##Tech Stack
+## Tech Stack
 - Vanilla JS
 - HTML
 - CSS
